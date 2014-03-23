@@ -151,20 +151,20 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var mytxt=new Array(14);
-  mytxt[0]="没错最逗的就是你咯O.O;
-  mytxt[1]="曾经我也是一个犀利藏剑直到我膝盖中了一剑！";
-  mytxt[2]="原来还有比我更帅的咩吗？";
-  mytxt[3]="猫逗逗果然好逗！";
-  mytxt[4]="撸男难撸啊！！";
-  mytxt[5]="你们看到我的手抓饼了吗？";
-  mytxt[6]="嗷嗷嗷……";
-  mytxt[7]="哈哈哈！马上就是泰阿鸡了！……";
-  mytxt[8]="什么竟然忘记开变声器了！";
-  mytxt[9]="啊，又被墨白云飞了！";
-  mytxt[10]="卡多卡瓦手电？鱼唇……";
-  mytxt[11]="小伙子我很欣赏你哦————猫耳！";
-  mytxt[12]="兴欣竟然输了！……";
-  mytxt[13]="什么沐沐竟然喜欢叶修 = =";
+  mytxt[0]="连秦始皇都见不到了T.T";
+  mytxt[1]="曹贼你还我大汉江山！";
+  mytxt[2]="都是赵高害得我！";
+  mytxt[3]="司马老儿果然奸诈！";
+  mytxt[4]="江山难坐啊！";
+  mytxt[5]="明朝天下一统，可惜看不到了！";
+  mytxt[6]="毁在杨广手里了……";
+  mytxt[7]="安史之乱亡我大唐……";
+  mytxt[8]="赵匡胤黄袍加身，兵不血刃啊！";
+  mytxt[9]="元人铁蹄果然厉害！";
+  mytxt[10]="还是朱元璋厉害……";
+  mytxt[11]="天地会的弟兄们，反清复明啊！";
+  mytxt[12]="连辛亥革命的黎明都没等到……";
+  mytxt[13]="看不到天朝的太阳了 = =";
 
 
   var text3 = function (m) { var r = 0; while (m > 1) r++, m >>= 1; return r; }

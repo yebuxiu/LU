@@ -194,8 +194,8 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   tweet.classList.add("twitter-share-button");
   tweet.setAttribute("href", "https://twitter.com/share");
   tweet.setAttribute("data-via", "oprilzeng");
-  tweet.setAttribute("data-url", "http://oprilzeng.github.io/2048/full");
-  tweet.setAttribute("data-counturl", "http://oprilzeng.github.io/2048/full/");
+  tweet.setAttribute("data-url", "http://yebuxiu.github.io/LU/");
+  tweet.setAttribute("data-counturl", "http://yebuxiu.github.io/LU/");
   tweet.textContent = "Tweet";
 
   var text = "I scored " + this.score + " points at PRC2048-Full edition, a game where you " +

@@ -151,20 +151,21 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var mytxt=new Array(14);
-  mytxt[0]="没错最逗的就是你咯!";
-  mytxt[1]="曾经我也是一个犀利藏剑直到我膝盖中了一剑！";
-  mytxt[2]="原来还有比我更帅的咩吗？";
-  mytxt[3]="猫逗逗果然好逗！";
-  mytxt[4]="撸男难撸啊！！";
-  mytxt[5]="你们看到我的手抓饼了吗？";
-  mytxt[6]="嗷嗷嗷……";
-  mytxt[7]="哈哈哈！马上就是泰阿鸡了！……";
-  mytxt[8]="什么竟然忘记开变声器了！";
-  mytxt[9]="啊，又被墨白云飞了！";
-  mytxt[10]="卡多卡瓦手电？鱼唇……";
-  mytxt[11]="小伙子我很欣赏你哦————猫耳！";
-  mytxt[12]="兴欣竟然输了！……";
-  mytxt[13]="什么沐沐竟然喜欢叶修 = =";
+  mytxt[0]="兴欣竟然输了！……";
+  mytxt[1]="什么沐沐竟然喜欢叶修 = =";
+  mytxt[2]="没错最逗的就是你咯!";
+  mytxt[3]="曾经我也是一个犀利藏剑直到我膝盖中了一剑！";
+  mytxt[4]="原来还有比我更帅的咩吗？";
+  mytxt[5]="猫逗逗果然好逗！";
+  mytxt[6]="撸男难撸啊！！";
+  mytxt[7]="你们看到我的手抓饼了吗？";
+  mytxt[8]="嗷嗷嗷……";
+  mytxt[9]="哈哈哈！马上就是泰阿鸡了！……";
+  mytxt[10]="什么竟然忘记开变声器了！";
+  mytxt[11]="啊，又被墨白云飞了！";
+  mytxt[12]="卡多卡瓦手电？鱼唇……";
+  mytxt[13]="小伙子我很欣赏你哦————猫耳！";
+  
 
   var text3 = function (m) { var r = 0; while (m > 1) r++, m >>= 1; return r; }
   var type    = won ? "game-won" : "game-over";

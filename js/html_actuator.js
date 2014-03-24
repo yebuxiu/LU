@@ -54,23 +54,23 @@ HTMLActuator.prototype.clearContainer = function (container) {
 HTMLActuator.prototype.addTile = function (tile) {
   var text=new Array(18);
   text[0] = " ";
-  text[1] = "白";
-  text[2] = "露";
-  text[3] = "逗";
-  text[4] = "片";
-  text[5] = "饼";
-  text[6] = "柒";
-  text[7] = "醉";
-  text[8] = "馒头子";
-  text[9] = "鸡";
-  text[10] = "手";
-  text[11] = "猫耳<br>姐姐";
-  text[12] = "荣";
-  text[13] = "耀";
-  text[14] = "不";
-  text[15] = "败";
-  text[16] = " ";
-  text[17] = " ";
+  text[1] = "墨白";
+  text[2] = "露露";
+  text[3] = "逗逗";
+  text[4] = "片片";
+  text[5] = "老板";
+  text[6] = "悄悄";
+  text[7] = "七月";
+  text[8] = "长安";
+  text[9] = "馒头";
+  text[10] = "手电";
+  text[11] = "文姬";
+  text[12] = "猫耳";
+  text[13] = "旖旎";
+  text[14] = "沉";
+  text[15] = "沙";
+  text[16] = "玄 ";
+  text[17] = "晶";
   var self = this;
   var text2 = function (n) { var r = 0; while (n > 1) r++, n >>= 1; return r; }
 
@@ -151,25 +151,39 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var mytxt=new Array(14);
-  mytxt[0]="兴欣竟然输了！……";
-  mytxt[1]="什么沐沐竟然喜欢叶修 = =";
-  mytxt[2]="没错最逗的就是你咯!";
-  mytxt[3]="曾经我也是一个犀利藏剑直到我膝盖中了一剑！";
-  mytxt[4]="原来还有比我更帅的咩吗？";
-  mytxt[5]="猫逗逗果然好逗！";
-  mytxt[6]="撸男难撸啊！！";
-  mytxt[7]="你们看到我的手抓饼了吗？";
-  mytxt[8]="嗷嗷嗷……";
-  mytxt[9]="哈哈哈！马上就是泰阿鸡了！……";
-  mytxt[10]="什么竟然忘记开变声器了！";
-  mytxt[11]="啊，又被墨白云飞了！";
-  mytxt[12]="卡多卡瓦手电？鱼唇……";
-  mytxt[13]="小伙子我很欣赏你哦————猫耳！";
-  
+  // 逗逗
+  mytxt[0]="200=1一切净毁啊！";
+  // 老板
+  mytxt[1]="再也吃不到手抓饼了吗？";
+  // 片片
+  mytxt[2]="年少不知J珍贵啊！";
+  // 悄悄
+  mytxt[3]="你再这样我删好友了！";
+  // 七月
+  mytxt[4]="嗷嗷嗷";
+  // 长安
+  mytxt[5]="1=200的痛苦谁能知晓！？";
+  // 馒头
+  mytxt[6]="啊，又忘记开变声器了吗？";
+  // 手电
+  mytxt[7]="卡多卡瓦手电！";
+  // 猫耳
+  mytxt[8]="妹陀！兵不血刃啊！";
+  // 旖旎 
+  mytxt[9]="竞技场无望了吗？";
+  // datie
+  mytxt[10]="愿得一人心，为我黑玄晶";
+  // datie
+  mytxt[11]="愿得一人心，为我黑玄晶";
+  // datie
+  mytxt[12]="愿得一人心，为我黑玄晶";
+  // datie
+  mytxt[13]="愿得一人心，为我黑玄晶";
+
 
   var text3 = function (m) { var r = 0; while (m > 1) r++, m >>= 1; return r; }
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "我们的荣耀不败！！" : mytxt[text3(maxscore)-3];
+  var message = won ? "一群装逼的小伙伴！！" : mytxt[text3(maxscore)-3];
 
   if (typeof ga !== "undefined") {
     ga("send", "event", "game", "end", type, this.score);
@@ -193,8 +207,8 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   var tweet = document.createElement("a");
   tweet.classList.add("twitter-share-button");
   tweet.setAttribute("href", "https://twitter.com/share");
-  tweet.setAttribute("data-via", "oprilzeng");
-  tweet.setAttribute("data-url", "http://yebuxiu.github.io/LU/");
+  tweet.setAttribute("data-via", "yebuxiu");
+  tweet.setAttribute("data-url", "http://yebuxiu.github.io/LU");
   tweet.setAttribute("data-counturl", "http://yebuxiu.github.io/LU/");
   tweet.textContent = "Tweet";
 

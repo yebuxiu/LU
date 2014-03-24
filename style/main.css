@@ -93,10 +93,10 @@ h1.title {
     animation-fill-mode: both; }
 
 .score-container:after {
-  content: "Score"; }
+  content: "分数"; }
 
 .best-container:after {
-  content: "Best"; }
+  content: "最高分数"; }
 
 p {
   margin-top: 0;
@@ -353,68 +353,92 @@ hr {
     text-align: center;
     font-weight: bold;
     z-index: 10;
-    font-size: 44px; }
+    font-size: 44px; } 
+    /*墨白*/
   .tile.tile-2 .tile-inner {
     background: #eee4da;
+	font-size:32px;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+	/*露露*/
   .tile.tile-4 .tile-inner {
     background: #ede0c8;
+	font-size:32px;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+	/*逗逗*/
   .tile.tile-8 .tile-inner {
     color: #f9f6f2;
+	font-size:32px;
     background: #f2b179; }
+	/*片片*/
   .tile.tile-16 .tile-inner {
     color: #f9f6f2;
+	font-size:32px;
     background: #f59563; }
+	/*老板*/
   .tile.tile-32 .tile-inner {
     color: #f9f6f2;
+	font-size:32px;
     background: #f67c5f; }
+	/*悄悄*/
   .tile.tile-64 .tile-inner {
     color: #f9f6f2;
     font-size:32px;
     background: #f65e3b; }
+	/*七月*/
   .tile.tile-128 .tile-inner {
     color: #f9f6f2;
+	font-size:32px;
     background: #edcf72;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286); }
+	/*长安*/
   .tile.tile-256 .tile-inner {
     color: #f9f6f2;
+	font-size:32px;
     background: #edcc61;
-    font-size:24px;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048); }
+	/*馒头*/
   .tile.tile-512 .tile-inner {
     color: #f9f6f2;
+	font-size:32px;
     background: #edc850;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381); }
+	/*手电*/
   .tile.tile-1024 .tile-inner {
     color: #f9f6f2;
+	font-size:32px;
     background: #ffe07d;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571); }
+	/*文姬*/
   .tile.tile-2048 .tile-inner {
     color: #f9f6f2;
     background: #ffe38a;
     font-size:32px;
-    line-height:40px;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571); }
+	/*猫耳*/
   .tile.tile-4096 .tile-inner {
     background: #ffe697;
+	font-size:32px;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571); }
+	/*旖旎*/
   .tile.tile-8192 .tile-inner {
     background: #ffeaa8;
+	font-size:32px;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571); }
+	/*沉*/
   .tile.tile-16384 .tile-inner {
     background: #ffedb4;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333); }
+	/*沙*/
   .tile.tile-32768 .tile-inner {
     background: #fff1c4;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333); }
+	/*玄*/
   .tile.tile-65536 .tile-inner {
-    color: #f9f6f2;
-    background: url(65536.jpg);
+    background: #fee9a6;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333); }
+	/*晶*/
   .tile.tile-131072 .tile-inner {
-    color: #f9f6f2;
-    background: url(131072.jpg);
+    background: #fcdc76;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333); }
   .tile.tile-super .tile-inner {
     color: #f9f6f2;

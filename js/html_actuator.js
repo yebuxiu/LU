@@ -163,12 +163,12 @@ HTMLActuator.prototype.message = function (won) {
   mytxt[4]="嗷嗷嗷";
   // 长安
   mytxt[5]="卡多卡瓦手电";
-  // 馒头
-  mytxt[6]="啊，又忘记开变声器了吗？";
+  // 
+  mytxt[6]="这是谁呢？";
   // 手电
   mytxt[7]="1=200的痛苦谁能知晓！？";
-  // 猫耳
-  mytxt[8]="妹陀！兵不血刃啊！";
+  // 馒头
+  mytxt[8]="啊，又忘记开变声器了吗？";
   // 旖旎 
   mytxt[9]="竞技场无望了吗？";
   // datie

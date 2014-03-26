@@ -161,8 +161,8 @@ HTMLActuator.prototype.message = function (won) {
   mytxt[3]="你再这样我删好友了！";
   // 七月
   mytxt[4]="嗷嗷嗷";
-  // 长安
-  mytxt[5]="卡多卡瓦手电";
+  // 悄悄
+  mytxt[5]="悄悄？";
   // 
   mytxt[6]="这是谁呢？";
   // 手电

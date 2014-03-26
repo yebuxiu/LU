@@ -69,7 +69,7 @@ HTMLActuator.prototype.addTile = function (tile) {
   text[13] = "文姬";
   text[14] = "猫耳";
   text[15] = "旖旎";
-  text[16] = "玄 ";
+  text[16] = "玄";
   text[17] = "晶";
   var self = this;
   var text2 = function (n) { var r = 0; while (n > 1) r++, n >>= 1; return r; }
@@ -162,11 +162,11 @@ HTMLActuator.prototype.message = function (won) {
   // 七月
   mytxt[4]="嗷嗷嗷";
   // 长安
-  mytxt[5]="1=200的痛苦谁能知晓！？";
+  mytxt[5]="卡多卡瓦手电";
   // 馒头
   mytxt[6]="啊，又忘记开变声器了吗？";
   // 手电
-  mytxt[7]="卡多卡瓦手电！";
+  mytxt[7]="1=200的痛苦谁能知晓！？";
   // 猫耳
   mytxt[8]="妹陀！兵不血刃啊！";
   // 旖旎 

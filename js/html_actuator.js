@@ -57,20 +57,20 @@ HTMLActuator.prototype.addTile = function (tile) {
   text[1] = "墨白";
   text[2] = "露露";
   text[3] = "逗逗";
-  text[4] = "小花";
-  text[5] = "片片";
-  text[6] = "右手";
-  text[7] = "老板";
-  text[8] = "悄悄";
-  text[9] = "七月";
-  text[10] = "长安";
-  text[11] = "馒头";
-  text[12] = "手电";
+  text[4] = "七月";
+  text[5] = "长安";
+  text[6] = "咸鱼";
+  text[7] = "片片";
+  text[8] = "醉秋";
+  text[9] = "猫耳";
+  text[10] = "馒头";
+  text[11] = "明风";
+  text[12] = "小天";
   text[13] = "文姬";
-  text[14] = "猫耳";
+  text[14] = "手电";
   text[15] = "旖旎";
-  text[16] = "玄";
-  text[17] = "晶";
+  text[16] = "老板";
+  text[17] = "寡妇";
   var self = this;
   var text2 = function (n) { var r = 0; while (n > 1) r++, n >>= 1; return r; }
 
@@ -150,40 +150,47 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 };
 
 HTMLActuator.prototype.message = function (won) {
-  var mytxt=new Array(14);
-  // 逗逗
-  mytxt[0]="200=1一切净毁啊！";
-  // 老板
-  mytxt[1]="再也吃不到手抓饼了吗？";
-  // 片片
-  mytxt[2]="年少不知J珍贵啊！";
-  // 悄悄
-  mytxt[3]="你再这样我删好友了！";
-  // 七月
-  mytxt[4]="嗷嗷嗷";
-  // 悄悄
-  mytxt[5]="悄悄？";
-  // 
-  mytxt[6]="这是谁呢？";
-  // 手电
-  mytxt[7]="1=200的痛苦谁能知晓！？";
-  // 馒头
-  mytxt[8]="啊，又忘记开变声器了吗？";
-  // 旖旎 
-  mytxt[9]="竞技场无望了吗？";
-  // datie
-  mytxt[10]="愿得一人心，为我黑玄晶";
-  // datie
-  mytxt[11]="愿得一人心，为我黑玄晶";
-  // datie
-  mytxt[12]="愿得一人心，为我黑玄晶";
-  // datie
-  mytxt[13]="愿得一人心，为我黑玄晶";
+  var mytxt=new Array(18);
+  // 保留
+  mytxt[0]="除非出bug";
+  
+  mytxt[1]="你不可能在这挂掉的！";
+  
+  mytxt[2]="你同样也不可能在这挂掉！";
+ 
+  mytxt[3]="毛豆同样也没有哦！";
+ 
+  mytxt[4]="嗷嗷嗷~";
+  
+  mytxt[5]="我有金闪闪！";
+ 
+  mytxt[6]="弱者为何要战斗！";
+  
+  mytxt[7]="挊挊挊挊挊挊·一库~";
+  
+  mytxt[8]="片片我是不会告诉你QQ的！";
+  
+  mytxt[9]="我的阿卡丽最时尚！";
+  
+  mytxt[10]="我已经不屑开变声器了！";
+  
+  mytxt[11]="小天天~~我来啦！";
+  
+  mytxt[12]="小风风~~救我！！";
+  
+  mytxt[13]="找情缘，要花萝。";
 
+  mytxt[14]="善恶终有报！天道好轮回！";
+  
+  mytxt[15]="狮虎！湿凉……";
+  
+  mytxt[16]="老板这渣渣不可能出现的。";
+  
+  mytxt[17]="寡妇逗也是~~";
 
   var text3 = function (m) { var r = 0; while (m > 1) r++, m >>= 1; return r; }
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "一群装逼的小伙伴！！" : mytxt[text3(maxscore)-3];
+  var message = won ? "一群装逼的小伙伴！！" : mytxt[text3(maxscore)];
 
   if (typeof ga !== "undefined") {
     ga("send", "event", "game", "end", type, this.score);
